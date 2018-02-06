@@ -1,0 +1,318 @@
+// bower:scss
+// endbower
+
+/*Tigo #3866B2 */
+
+
+/*Movistar ##00A8D4 */
+
+
+/*Claro #ED3326 */
+
+
+/*Azul #0071C1*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding-top: 25px;
+}
+
+.social-header {
+    margin-top: 12px;
+}
+
+.social-header a {
+    color: #FFFFFF;
+}
+
+.social-header a .fa-inverse {
+    color: #ED3326;
+}
+
+
+/*.social-header{
+    float: right;
+}*NO ALINEA LOS ICONOS SOCIALES A LA DERECHA CON EL text-xs-right  ... DIO DESPUES DE APLICAR ESTO: MIRAR SI EN BOOTSTRAP 4 DESAPARECIO "XS" DE LA LINEA DE CODIGO*/
+
+.menu-bar {
+    background-color: #ED3326;
+    margin-top: 20px;
+}
+
+.menu-bar a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu-bar a:hover {
+    text-decoration: none;
+    color: #FF8400;
+}
+
+.menu-list {
+    padding: 12px 0;
+    margin-bottom: 0;
+}
+
+.menu-list>li:not(:last-child) {
+    margin-right: 40px;
+}
+
+h5 {
+    color: #0071C1;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: contain;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.cajon-boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #ED3326;
+    border-color: #ED3326;
+}
+
+h4 {
+    color: #0071C1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    color: #0071C1;
+    text-align: center;
+}
+
+.icono {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.textos-guia {
+    color: #737373;
+}
+
+.slider-exp {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h6 {
+    color: #FFFFFF;
+}
+
+.primer-texto {
+    padding-top: 30px;
+}
+
+.ultimo-texto {
+    padding-bottom: 20px;
+}
+
+.texto-footer {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+footer {
+    background-color: #0071C1;
+}
+
+h3 {
+    color: #737373;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+label {
+    color: #737373;
+}
+
+.logo-footer {
+    margin-top: -30px;
+    padding-bottom: 30px;
+}
+
+.carouselQuestions {
+    margin-bottom: 20px;
+}
+
+#my-select-operador {
+    width: 400px;
+    text-align: center;
+}
+
+.btn2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.formulario-contacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-contacto {
+    text-align: center;
+}
+
+.califica {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+
+/*
+ * Carousel Hero
+ */
+
+.carousel-item {
+    height: 370px;
+    background: url('../images/6.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @media screen and (max-width: 767px) {
+        height: auto;
+    }
+    .carousel-caption {
+        @media screen and (max-width: 767px) {
+            left: 0;
+            top: 50px;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 50px;
+            position: relative;
+        }
+    }
+}
+
+
+/*
+ * Rating form
+ */
+
+.rating-form {
+    width: 350px;
+    height: 700px;
+    right: -400px;
+    top: 50%;
+    z-index: 100;
+    padding: 20px;
+    position: fixed;
+    background-color: #FFFFFF;
+    border: red 5px outset;
+    transform: translateY(-50%);
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    .rating-form__tab {
+        top: 50%;
+        position: absolute;
+        width: 180px;
+        height: 35px;
+        left: -180px;
+        cursor: pointer;
+        background-color: #ccc;
+        transform: translateY(-50%);
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    &.active {
+        right: 0;
+    }
+}
+
+marquee{
+    position: relative;
+    padding-top: 10px;
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #ED3326;
+    z-index: 99;
+    text-align: center;
+}
+
+/*Pestaña Formulario*/
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion{
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+
+
+.preguntas{
+    text-align: left;
+}
+
+.cuadros-formulario{
+    padding-top: 0px,
+}
+
+strong{
+    font-weight: bold;
+}

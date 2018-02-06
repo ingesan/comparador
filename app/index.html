@@ -1,0 +1,369 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  
+    <title>Portate Bien</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+     
+    <!--GOOGLE FONTS-->  
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+     
+    <script src="https://use.fontawesome.com/025d1f53df.js"></script> 
+      
+    <!--<link rel="stylesheet" href="main.scss" type="text/css"> ESTO NO ES NECESARIO DADA LA CONFIG ACTUAL YA QUE VEO QUE LA WEB LOCAL RESPONDE A LA HOJA DE ESTILOS??-->
+      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/logo%20temporal2.png" alt="portatebien">
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-header list-inline text-right">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li> 
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-bar text-right"><!--EN BOOTSTRAP 4 DESAPARECIO EL "XS"??-->
+            <nav class="container" role="menu">
+                <ul class="menu-list list-inline">
+                    <li class="list-inline-item">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="califica.html">Califica tu operador</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Quiénes somos</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        
+    </header>
+      
+    <div id="main">
+        <div id="rating-form" class="rating-form">
+            <span id="rating-form__tab" class="rating-form__tab">
+                Gánate un iPhone
+            </span>
+            <div class="container">
+                <p class="texto">Califica el servicio de tu operador y participa en el sorteo de múltiples premios.</p>
+                <form>
+                      <div class="form-group">
+                        <input class="form-control" id="exampleInputPassword1" placeholder="Nombre y Apellidos">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" id="exampleInputPassword1" placeholder="Número telefónico">
+                      </div>     
+                      <p class="preguntas">¿Cual es tu operador actual?</p> 
+                      <select class="form-control" id="exampleFormControlSelect2">
+                          <option value="1">Claro</option>
+                          <option value="2">Movistar</option>
+                          <option value="3">Tigo</option>
+                          <option value="4">ETB</option>
+                          <option value="5">5</option>      
+                      </select>
+                      <br>
+
+                      <p class="clasificacion">
+                        <label>Cobertura&emsp;&emsp;</label>  
+                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                        --><label for="radio1">★</label><!--
+                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                      </p>  
+                      <p class="clasificacion">
+                        <label>Costos&emsp;&emsp;</label>  
+                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                        --><label for="radio1">★</label><!--
+                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                      </p>
+                      <p class="clasificacion">
+                        <label>Atención&emsp;&emsp;</label>  
+                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                        --><label for="radio1">★</label><!--
+                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                      </p>
+                      <p class="clasificacion">
+                        <label>Planes&emsp;&emsp;</label>  
+                        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                        --><label for="radio1">★</label><!--
+                        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                        --><label for="radio2">★</label><!--
+                        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                        --><label for="radio3">★</label><!--
+                        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                        --><label for="radio4">★</label><!--
+                        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                        --><label for="radio5">★</label>
+                    </p>             
+                </form>
+             </div>
+             <div class="continer" align="center">
+                 <button type="submit" id="submitForm" class="btn btn-primary btn-lg">
+                    PARTICIPAR
+                 </button>
+            </div>     
+           </div>
+             
+                
+        
+            
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-md-block" style="padding: 20px">
+                            <h5 class="white-text-shadow">Configura tu plan ideal</h5>
+                            <div class="form-container" style="margin: 20px 0">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                      <div class="form-group">
+                                        <img src="images/opermovil.png"> 
+                                        <br>  
+                                        <label for="exampleFormControlSelect1">Operador móvil <strong>(Actual)</strong></label>
+                                        <select class="form-control" id="exampleFormControlSelect2">
+                                          <option value="1">Claro</option>
+                                          <option value="2">Movistar</option>
+                                          <option value="3">Tigo</option>
+                                          <option value="4">ETB</option>
+                                          <option value="5">5</option>
+                                        </select>
+                                      </div>
+                                    </div>  
+                                    <div class="col-xs-12 col-md-3">
+                                      <div class="form-group">
+                                        <img src="images/presupuesto.png">
+                                        <br>  
+                                        <label for="exampleFormControlSelect1">Presupuesto</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option value="1">Menos de $20.000</option>
+                                          <option value="2">Entre $20.000 y $40.000</option>
+                                          <option value="3">Entre $40.000 y $60.000</option>
+                                          <option value="4">Entre $60.000 y $80.000</option>
+                                          <option value="5">Más de $80.000</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                      <div class="form-group">
+                                        <img src="images/plan.png">
+                                        <br>
+                                        <label for="exampleFormControlSelect1">Tipo de plan</label>
+                                        <select class="form-control" id="exampleFormControlSelect3">
+                                          <option value="1">Solo Minutos</option>
+                                          <option value="2">Solo datos</option>
+                                          <option value="3">Datos y minutos</option>
+                                          <option value="4">Apps</option>
+                                          <option value="5">Datos, minutos y Apps</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-3">
+                                      <div class="form-group">
+                                        <img src="images/cobertura.png">
+                                        <br>  
+                                        <label for="exampleFormControlSelect1">Cobertura</label>
+                                        <select class="form-control" id="exampleFormControlSelect4">
+                                          <option value="1">Urbana</option>
+                                          <option value="2">Rural</option>
+                                          <option value="3">Urbana y rural</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button type="submit" id="submitForm" class="btn btn-primary btn-lg">
+                                    ENCUENTRA TU PLAN
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icono">
+                        <img src="images/hablanos.png">
+                    </div>    
+                    <h4>1 - Cuéntanos que te gusta</h4>
+                    <p class="textos-guia">¿Usas más datos o acaso más minutos?, Pórtate bien te ayuda a encontrar el plan que más se ajusta a tus necesidades de consumo.</p>
+                </div>   
+                <div class="col-md-4">
+                    <div class="icono">
+                        <img src="images/listaplanes.png">
+                    </div>    
+                    <h4>2 - Descubre Tu plan ideal</h4>
+                    <p class="textos-guia">Basándonos en tus necesidades nuestro algoritmo descubre el plan ideal con características y precios en tiempo real.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icono">
+                        <img src="images/operador.png">
+                    </div>    
+                    <h4>3 - Contacta un asesor</h4>
+                    <p class="textos-guia">Adquiere tu plan sin  desplazamientos, nuestro equipo de asesores se pondrá en contacto contigo y te ayudara en el trámite de tu plan.</p>
+                </div>
+            </div>
+        </div>
+        <marquee><img src="images/fb_icon.png">&emsp;"Servicio muy efectivo, superaron mis expectativas".(Sandro González)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/fb_icon.png">&emsp;"Excelente servicio, logré encontar un buen plan".(Juan Pablo Arboleda)</marquee>
+        <!--<div class="containner">
+            <div class="slider-exp">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/experiencias1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/experiencias2.jpg" alt="Second slide">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>-->
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <h6 class="texto-footer primer-texto" align="center">Creado por: Sandro González</h6>
+            <p class="texto-footer" align="center">Derechos Reservados</p>
+            <p class="texto-footer ultimo-texto" align="center">&#169; Pórtate Bien 2018</p>
+            <br>
+            <div class="container" align="center">
+                <div class="logo-footer">
+                    <img  src="images/Logotemporalblanco.png">
+                </div>    
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/index.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    
+    <!--LINEAS PARA USO DEL BOOTSTRAP NECESARIAS DADA LA CONFIG ACTUAL??-->  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>  
+  </body>
+</html>
