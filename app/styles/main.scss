@@ -1,19 +1,21 @@
 // bower:scss
 // endbower
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 
-/*Tigo #3866B2 */
+@import "steps";
 
-
-/*Movistar ##00A8D4 */
-
-
-/*Claro #ED3326 */
-
-
-/*Azul #0071C1*/
+input:focus,
+select:focus,
+select:active,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 header {
@@ -67,7 +69,7 @@ h5 {
     color: #0071C1;
 }
 
-.carousel-caption {
+.b-caption {
     background-color: rgba(255, 255, 255, 0.8);
     background-size: contain;
     -webkit-border-radius: 5px;
@@ -150,7 +152,7 @@ label {
     padding-bottom: 30px;
 }
 
-.carouselQuestions {
+.bQuestions {
     margin-bottom: 20px;
 }
 
@@ -184,10 +186,10 @@ label {
 
 
 /*
- * Carousel Hero
+ * b Hero
  */
 
-.carousel-item {
+.b-item {
     height: 370px;
     background: url('../images/6.jpeg');
     background-repeat: no-repeat;
@@ -196,7 +198,7 @@ label {
     @media screen and (max-width: 767px) {
         height: auto;
     }
-    .carousel-caption {
+    .b-caption {
         @media screen and (max-width: 767px) {
             left: 0;
             top: 50px;
@@ -214,8 +216,8 @@ label {
  */
 
 .rating-form {
-    width: 350px;
-    height: 700px;
+    width: 404px;
+    height: 100vh;
     right: -400px;
     top: 50%;
     z-index: 100;
@@ -236,11 +238,14 @@ label {
     .rating-form__tab {
         top: 50%;
         position: absolute;
-        width: 180px;
-        height: 35px;
-        left: -180px;
+        width: 90px;
+        height: 120px;
+        left: -94px;
+        padding: 10px;
         cursor: pointer;
-        background-color: #ccc;
+        color: white;
+        text-align: center;
+        background-color: red;
         transform: translateY(-50%);
         -webkit-border-top-left-radius: 5px;
         -webkit-border-bottom-left-radius: 5px;
@@ -248,21 +253,14 @@ label {
         -moz-border-radius-bottomleft: 5px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        .fas {
+            margin-top: 5px;
+            font-size: 25px;
+        }
     }
     &.active {
         right: 0;
     }
-}
-
-marquee{
-    position: relative;
-    padding-top: 10px;
-    width: 100%;
-    height: 40px;
-    color: #FFFFFF;
-    background-color: #ED3326;
-    z-index: 99;
-    text-align: center;
 }
 
 /*Pestaña Formulario*/
@@ -315,4 +313,138 @@ input[type="radio"]:checked ~ label {
 
 strong{
     font-weight: bold;
+}
+
+/*
+    Social Header icons
+*/
+
+.social-header {
+    margin-top: 30px;
+    .fab {
+        margin: 0 10px;
+        font-size: 25px;
+        color: red;
+    }
+}
+
+/*
+    Menu list
+*/
+
+.menu-list {
+    a:hover {
+        color: white;
+    }
+}
+
+/*
+    Hero form container
+*/
+
+.hero-form {
+    padding: 20px 100px;
+    background: blue;
+    background: url('../images/6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__title {
+        color: white;
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+    }
+    .wizard {
+        .steps {
+            .current {
+                a {
+                    background: red;
+                }
+            }
+            .disabled {
+                a {
+                    color: white;
+                    background-color: rgba(204, 204, 204, .7);
+                }
+            }
+        }
+        .content {
+            height: 250px;
+            min-height: 100px;
+            .body {
+                top: 50%;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                position: absolute;
+                transform: translateY(-50%);
+                .fas {
+                    color: #0071C1;
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    width: 450px;
+                    margin: 0 auto;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .actions {
+            li:nth-last-child(2) {
+                a {
+                    background-color: #999;
+                }
+            }
+            li:nth-last-child(1) {
+                a {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
+
+/*
+    Guide container
+*/
+
+.guide-container {
+    padding: 50px;
+    padding-bottom: 90px;
+    .guide-container__title,
+    .far {
+        display: block;
+        text-align: center;
+    }
+    .guide-container__title {
+        font-weight: bolder;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .far {
+        color: #ccc;
+        font-size: 70px;
+    }
+    .guide-container__subtitle {
+        font-size: 20px;
+    }
+}
+
+/*
+    Feedback marquee
+*/
+
+.marquee {
+    position: absolute;
+    transform: translateY(-40px);
+    padding-top: 7px;
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #ED3326;
+    z-index: 99;
+    text-align: center;
 }
